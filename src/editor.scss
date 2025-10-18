@@ -1,0 +1,100 @@
+// Device Preview Container
+.flexilayouts-masonry-options {
+    // These will be overridden by inline styles
+    max-width: var(--device-preview-width, 100%);
+    margin: var(--device-preview-margin, 0);
+    border: var(--device-preview-border, none);
+    border-radius: var(--device-preview-border-radius, 0);
+    overflow: var(--device-preview-overflow, visible);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+
+    // Device indicator
+    &::before {
+        content: attr(data-device);
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 10px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    // Responsive options section
+    .flexilayouts-options-section {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+}
+
+// Animation preview styles for the editor
+.wp-block-gallery {
+    // Add smooth transitions for editor preview
+    transition: all 0.3s ease-in-out;
+
+    // Animation previews
+    &.has-bounce-animation {
+        .blocks-gallery-item {
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    &.has-fade-animation {
+        .blocks-gallery-item {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+// Ensure the block appender is visible in the editor
+.block-editor-inner-blocks .block-list-appender {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+// Adjust block toolbar
+.block-editor-block-toolbar {
+    z-index: 100;
+}
+
+// Make sure the gallery block doesn't overflow in the editor
+.wp-block-gallery {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+// Style the block controls
+.components-toolbar {
+    .components-dropdown-menu__menu {
+        .components-menu-group {
+            padding: 8px 0;
+        }
+    }
+}
+
+// Add some spacing to the inspector controls
+.components-panel__body {
+    margin-bottom: 16px;
+}
+
+// Style the range controls
+.components-range-control {
+    .components-base-control__field {
+        margin-bottom: 16px;
+    }
+}

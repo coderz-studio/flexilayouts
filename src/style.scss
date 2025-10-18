@@ -1,0 +1,234 @@
+// Masonry Layout Styles
+.wp-block-gallery.has-masonry-animation {
+    // Hide the column sizer element
+    .masonry-column-sizer {
+        position: absolute;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    // Main container styles
+    display: grid;
+    grid-template-columns: repeat(var(--masonry-columns, 3), 1fr);
+    gap: var(--masonry-gap, 10px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    .blocks-gallery-grid {
+        display: contents;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .blocks-gallery-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        break-inside: avoid;
+        
+        figure {
+            margin: 0;
+            height: 100%;
+            
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    
+    // Responsive adjustments
+    @media (max-width: 1024px) {
+        --masonry-columns: 2 !important;
+    }
+    
+    @media (max-width: 600px) {
+        --masonry-columns: 1 !important;
+    }
+}
+// Print styles
+@media print {
+    .wp-block-gallery {
+        .blocks-gallery-item {
+            margin-bottom: 20px !important;
+            page-break-inside: avoid;
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            figcaption {
+                position: static;
+                opacity: 1 !important;
+                color: #000;
+                background: none;
+                padding: 5px 0 0;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* Carousel Layout Styles */
+.has-gallery-animation-carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px; /* Space for pagination */
+}
+
+.has-gallery-animation-carousel .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.has-gallery-animation-carousel .swiper-slide {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image handling */
+.has-gallery-animation-carousel .wp-block-image {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+.has-gallery-animation-carousel .wp-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Navigation arrows */
+.has-gallery-animation-carousel .swiper-button-next,
+.has-gallery-animation-carousel .swiper-button-prev {
+    color: #000;
+    width: 30px;
+    height: 30px;
+}
+
+.has-gallery-animation-carousel .swiper-button-next:after,
+.has-gallery-animation-carousel .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+/* Pagination */
+.has-gallery-animation-carousel .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.has-gallery-animation-carousel .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #000;
+    opacity: 0.5;
+    margin: 0 4px;
+}
+
+.has-gallery-animation-carousel .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .has-gallery-animation-carousel .swiper-slide {
+        width: calc(50% - 15px) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .has-gallery-animation-carousel .swiper-slide {
+        width: 100% !important;
+    }
+}
+
+/* Equal height slides */
+.has-gallery-animation-carousel .swiper-slide > * {
+    height: 100%;
+    width: 100%;
+}
+
+//editor controllers css
+
+.flexilayouts-options-section{
+    .components-base-control__field {
+        &.is_responsive {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .components-button-group {
+        &.device-selector {
+            display: flex;
+            gap: 4px;
+            
+            .components-button {
+                height: auto;
+                min-width: 36px;
+                justify-content: center;
+
+                &.has-icon{
+                    padding: 0;
+                    min-width: 0;
+                    min-height: 0;
+                    background: none;
+                }
+                
+                &.is-primary {
+                    border: none;
+                    box-shadow: none;
+                    svg {
+                        fill: #007cba;
+                    }
+                }
+                
+                &:not(.is-primary) {
+                    border: none;
+                    box-shadow: none;
+                    &:hover {
+                        color: #007cba;
+                    }
+
+                    svg{
+                        fill: #a0aec0;
+                    }
+                }
+                
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .components-range-control{
+        margin-top: 15px;
+        width: 100%;
+        .components-range-control__wrapper{
+            margin-bottom: 24px;
+        }
+    }
+}

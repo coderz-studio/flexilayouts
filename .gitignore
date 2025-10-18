@@ -1,0 +1,100 @@
+# Dependencies
+/node_modules
+
+# Build files
+/build
+*.zip
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# WordPress specific
+wp-config.php
+wp-content/debug.log
+
+# Dependency directories
+bower_components/
+
+# Cache
+.cache/
+
+# Build files
+dist/
+
+# IDE specific files
+.idea/
+
+# Local development
+*.local
+
+# Test coverage
+coverage/
+
+# Build artifacts
+*.pem
+*.p12
+*.key
+*.crt
+*.csr
+*.cer
+*.pfx
+
+# Local development URLs
+*.local
+
+# Local development database
+*.sql
+*.sqlite
+
+# Local development logs
+*.log
+
+# Local development environment files
+.env.*
+!.env.example
+
+# Local development IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local development OS files
+.DS_Store
+Thumbs.db
+
+vendor
+composer.lock
+.DS_Store
+
+README.md

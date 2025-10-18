@@ -1,0 +1,246 @@
+# Copyright (C) 2025 Coderz Studio
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: FlexiLayouts 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexilayouts\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-18T19:56:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: flexilayouts\n"
+
+#. Plugin Name of the plugin
+#: flexilayouts.php
+#: includes/class-flexilayouts-admin-dashboard.php:107
+#: includes/class-flexilayouts-admin-dashboard.php:138
+msgid "FlexiLayouts"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: flexilayouts.php
+msgid "https://flexilayouts.com"
+msgstr ""
+
+#. Description of the plugin
+#: flexilayouts.php
+msgid "Transform core gallery block into a responsive and beautiful masonry grid with just a few clicks."
+msgstr ""
+
+#. Author of the plugin
+#: flexilayouts.php
+msgid "Coderz Studio"
+msgstr ""
+
+#. Author URI of the plugin
+#: flexilayouts.php
+msgid "https://coderzstudio.com"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:156
+msgid "Enhance Your WordPress Layouts"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:157
+msgid "Transform your Gutenberg blocks with advanced layout options and beautiful animations. Create stunning galleries, carousels, and more with just a few clicks."
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:168
+msgid "How does it work?"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:176
+msgid "Add a Block"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:177
+msgid "Add a Gallery block to your page."
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:182
+msgid "Choose Layout"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:183
+msgid "Select between Masonry, or Default ( grid ) layouts."
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:188
+msgid "Customize"
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:189
+msgid "Adjust settings like columns, spacing, and animations."
+msgstr ""
+
+#: includes/class-flexilayouts-admin-dashboard.php:204
+msgid "FlexiLayouts Settings"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:31
+#: build/index.js:59
+msgid "Number of Columns"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:38
+#: build/index.js:66
+msgid "Set the number of columns in the masonry grid"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:47
+#: build/index.js:75
+msgid "Column Gap (px)"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:54
+#: build/index.js:82
+msgid "Set the gap between columns in the masonry grid"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:63
+#: build/index.js:91
+msgid "Fit to Container Width"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:64
+#: build/index.js:92
+msgid "Fit the masonry container to available width"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:71
+#: build/index.js:99
+msgid "Item Order"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:73
+#: build/index.js:101
+msgid "Horizontal Order"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:74
+#: build/index.js:102
+msgid "Maintain horizontal left-to-right order when possible"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:79
+#: build/index.js:107
+msgid "Left to Right"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:80
+#: build/index.js:108
+msgid "Items placed from left to right"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:85
+#: build/index.js:113
+msgid "Top to Bottom"
+msgstr ""
+
+#: build/index.js:1
+#: src/controllers/MasonryOptions.js:86
+#: build/index.js:114
+msgid "Items placed from top to bottom"
+msgstr ""
+
+#: build/index.js:1
+#: src/components/GalleryAnimationControl.js:15
+#: build/index.js:387
+msgid "Default"
+msgstr ""
+
+#: build/index.js:1
+#: src/components/GalleryAnimationControl.js:16
+#: build/index.js:388
+msgid "Masonry"
+msgstr ""
+
+#: build/index.js:1
+#: src/components/GalleryAnimationControl.js:46
+#: build/index.js:418
+msgid "Animation"
+msgstr ""
+
+#: build/index.js:1
+#: src/components/GalleryAnimationControl.js:57
+#: build/index.js:429
+msgid "Flexilayouts : Layout Settings"
+msgstr ""
+
+#: build/index.js:1
+#: src/components/GalleryAnimationControl.js:59
+#: build/index.js:431
+msgid "Layout Type"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:30
+msgid "Slides Per View"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:37
+msgid "Number of slides to display at once"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:46
+msgid "Space Between Slides (px)"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:53
+msgid "Space between slides in pixels"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:62
+msgid "Autoplay"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:63
+msgid "Enable automatic sliding"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:69
+msgid "Autoplay Delay (ms)"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:70
+msgid "Delay between transitions in milliseconds"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:79
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:80
+msgid "Display previous/next navigation arrows"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:85
+msgid "Show Pagination"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:86
+msgid "Display pagination dots"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:91
+msgid "Loop"
+msgstr ""
+
+#: src/controllers/CarouselOptions.js:92
+msgid "Enable continuous loop mode"
+msgstr ""
